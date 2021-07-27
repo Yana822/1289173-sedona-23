@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="#" width="102" height="84" alt="Седона" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="container">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html"> Главная </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html"> ФОТО И ВИДЕО </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html"> Форма Отзыва </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#"> HTML Academy </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <div class="container">
+        <div class="page-main__image">
+          <img src="#" alt="СЕДОНА" />
+        </div>
+        <section class="gallery">
+          <h2 class="gallery__title">Фото и видео</h2>
+          <p class="gallery__subtitle">
+            Не можете решиться на путешествие из-за курса? Фотографии помогут
+            вам забыть о политике и экономике.
+          </p>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <div class="gallery__content--photo"></div>
+              <div class="gallery__content">
+                <p class="gallery__name">неродные просторы</p>
+                <p class="gallery__author">Автор фото: Борис</p>
+                <div class="gallary__like">
+                  <button
+                    class="gallary__like-button"
+                    type="button"
+                    aria-label="Нравится"
+                  ></button>
+                  <span class="gallary__like-sum">1350</span>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="gallery__content--photo"></div>
+              <div class="gallery__content">
+                <p class="gallery__name">Местная растительность</p>
+                <p class="gallery__author">Автор фото: Сергей</p>
+                <div class="gallary__like">
+                  <button
+                    class="gallary__like-button"
+                    type="button"
+                    aria-label="Нравится"
+                  ></button>
+                  <span class="gallary__like-sum">143</span>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="gallery__content--photo"></div>
+              <div class="gallery__content">
+                <p class="gallery__name">Дорога на север</p>
+                <p class="gallery__author">Автор фото: Петр</p>
+                <div class="gallary__like">
+                  <button
+                    class="gallary__like-button"
+                    type="button"
+                    aria-label="Нравится"
+                  ></button>
+                  <span class="gallary__like-sum">96</span>
+                </div>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="gallery__content--photo"></div>
+              <div class="gallery__content">
+                <p class="gallery__name">Мост дьявола</p>
+                <p class="gallery__author">Автор фото: Антон</p>
+                <div class="gallary__like">
+                  <button
+                    class="gallary__like-button"
+                    type="button"
+                    aria-label="Нравится"
+                  ></button>
+                  <span class="gallary__like-sum">254</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="presentation">
+            <p class="presentation__title">Все еще сомневаетесь?</p>
+            <p class="presentation__subtitle">
+              Смотрите видеопрезентацию и скорее за билетами, пока они не
+              подорожали в очередной раз!
+            </p>
+          </div>
+          <div class="presentation__video"></div>
+          <input
+            class="presentation__range"
+            type="range"
+            min="1"
+            max="100"
+            value="25"
+          />
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="map"></div>
+      <section class="social">
+        <div class="container">
+          <p class="social__hashtag">#VISITSEDONA</p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a
+                class="social__link social__link--twitter"
+                href="https://twitter.com/htmlacademy_ru"
+                aria-label="twitter"
+              >
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--facebook"
+                href="https://www.facebook.com/htmlacademy"
+                aria-label="facebook"
+              >
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--youtube"
+                href="https://www.youtube.com/user/htmlacademyru"
+                aria-label="youtube"
+              >
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано:</p>
+            <a
+              class="copyright__link"
+              href="https://htmlacademy.ru/intensive/adaptive"
+            >
+            </a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
