@@ -1,12 +1,150 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="#" width="102" height="84" alt="Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="container">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              ФОТО И ВИДЕО
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Форма Отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">СЕДОНА — небольшой городок в АРИЗОНЕ</h1>
+    <section class="welcome-block">
+      <div class="container">
+        <div class="welcome-block__image">
+          <img src="#" alt="СЕДОНА">
+        </div>
+        <div class="welcome-block__wrapper-headers">
+          <h2 class="welcome-block__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h2>
+          <p class="welcome-block__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </div>
+    </section>
+    <section class="main-description">
+      <div class="container">
+        <div class="main-description__wrapper-headers">
+          <h2 class="main-description__title">НАСТОЯЩИЙ ГОРОДОК— №1 —</h2>
+          <p class="main-description__subtitle">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          <img src="#">
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Жилье</h3>
+            <p class="advantages__info">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">СУВЕНИРЫ</h3>
+            <p class="advantages__info">Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">ЕДА</h3>
+            <p class="advantages__info">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="description">
+      <div class="container">
+        <div class="description__text">
+          <h2>ТАМ ЕСТЬ Мост дьявола— №2 —</h2>
+          <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <img src="#">
+        </div>
+      </div>
+    </section>
+    <section class="additional-benefits">
+      <div class="container">
+        <ul class="additional-benefits__list">
+          <li class="additional-benefits__item">
+            <h3 class="additional-benefits__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <p class="additional-benefits__info">— №3 —ВСЕ интересные места находятся очень близко</p>
+          </li>
+          <li class="additional-benefits__item">
+            <h3 class="additional-benefits__title">КРАСИВАЯ ДОРОГА</h3>
+            <p class="additional-benefits__info">— №4 —ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+          </li>
+          <li class="additional-benefits__item">
+            <h3 class="additional-benefits__title">МАЛО ТУРИСТОВ</h3>
+            <p class="additional-benefits__info">— №5 —Большинство едет в гранд каньони толпится там</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="hotel-search">
+      <div class="container">
+        <h3 class="hotel-search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
+        <p class="hotel-search__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшиепредложения гостиниц в
+          седоне</p>
+        <a class="hotel-search__button button" href="#">НАЙТИ гостиницу</a>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="map"></div>
+    <section class="social">
+      <div class="container">
+        <p class="social__hashtag">#VISITSEDONA</p>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"
+              aria-label="twitter">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+              aria-label="facebook">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+              aria-label="youtube">
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          </a>
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+
 </html>
