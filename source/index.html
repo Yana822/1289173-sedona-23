@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/normalize.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body class="page__body">
@@ -21,7 +23,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a href="catalog.html">
               ФОТО И ВИДЕО
             </a>
           </li>
@@ -42,10 +44,9 @@
   <main class="page-main">
     <h1 class="visually-hidden">СЕДОНА — небольшой городок в АРИЗОНЕ</h1>
     <section class="welcome-block">
+      <div class="welcome-block__image">
+      </div>
       <div class="container">
-        <div class="welcome-block__image">
-          <img src="#" alt="СЕДОНА">
-        </div>
         <div class="welcome-block__wrapper-headers">
           <h2 class="welcome-block__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h2>
           <p class="welcome-block__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -55,10 +56,13 @@
     <section class="main-description">
       <div class="container">
         <div class="main-description__wrapper-headers">
-          <h2 class="main-description__title">НАСТОЯЩИЙ ГОРОДОК— №1 —</h2>
+          <h2 class="main-description__title">НАСТОЯЩИЙ ГОРОДОК
+          </h2>
+          <p class="main-description__number">— №1 —</p>
           <p class="main-description__subtitle">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-          <img src="#">
         </div>
+      </div>
+      <div class="main-description__image">
       </div>
     </section>
     <section class="advantages">
@@ -81,27 +85,31 @@
     </section>
     <section class="description">
       <div class="container">
-        <div class="description__text">
-          <h2>ТАМ ЕСТЬ Мост дьявола— №2 —</h2>
-          <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <img src="#">
+        <div class="description__wrapper-headers">
+          <h2 class="description__title">ТАМ ЕСТЬ Мост дьявола</h2>
+          <p class="main-description__number">— №2 —</p>
+          <p class="description__subtitle">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
       </div>
+      <div class="description__image"></div>
     </section>
     <section class="additional-benefits">
       <div class="container">
         <ul class="additional-benefits__list">
           <li class="additional-benefits__item">
             <h3 class="additional-benefits__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-            <p class="additional-benefits__info">— №3 —ВСЕ интересные места находятся очень близко</p>
+            <p class="additional-benefits__number">— №3 —</p>
+            <p class="additional-benefits__info">ВСЕ интересные места находятся очень близко</p>
           </li>
           <li class="additional-benefits__item">
             <h3 class="additional-benefits__title">КРАСИВАЯ ДОРОГА</h3>
-            <p class="additional-benefits__info">— №4 —ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+            <p class="additional-benefits__number">— №4 —</p>
+            <p class="additional-benefits__info">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
           </li>
           <li class="additional-benefits__item">
             <h3 class="additional-benefits__title">МАЛО ТУРИСТОВ</h3>
-            <p class="additional-benefits__info">— №5 —Большинство едет в гранд каньони толпится там</p>
+            <p class="additional-benefits__number">— №5 —</p>
+            <p class="additional-benefits__info">Большинство едет в гранд каньони толпится там</p>
           </li>
         </ul>
       </div>

@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Седона</title>
+  <link href="css/normalize.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body class="page__body">
@@ -35,7 +37,6 @@
   </header>
   <main class="page-main">
     <div class="page-main__image">
-      <img src="#" alt="СЕДОНА" />
     </div>
     <section class="form">
       <div class="container">
@@ -46,22 +47,23 @@
         </p>
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="full-name">
+            <p class="full-name__title">Представьтесь:</p>
             <p class="full-name__name">
-              <label class="full-name__label" for="name">ИМЯ</label>
+              <label class="full-name__label" for="name">ИМЯ*:</label>
               <input class="full-name__input" id="name" type="text" name="name" placeholder="Петр" />
             </p>
             <p class="full-name__surname">
-              <label class="full-name__label" for="surname">ФАМИЛИЯ</label>
+              <label class="full-name__label" for="surname">ФАМИЛИЯ*:</label>
               <input class="full-name__input" id="surname" type="text" name="surname" placeholder="Иванов" />
             </p>
             <p class="full-name__patronymic">
-              <label class="full-name__label" for="patronymic">ОТЧЕСТВО:</label>
+              <label class="full-name__label" for="patronymic">ОТЧЕСТВО*:</label>
               <input class="full-name__input" id="patronymic" type="text" name="patronymic"
                 placeholder="Александрович" />
             </p>
           </div>
           <div class="contacts-form">
-            <p class="contacts-form__title">контактная информация:</p>
+            <p class="contacts-form__title">Контактная информация:</p>
             <div class="contacts-form__wrapper">
               <p class="contacts-form__phone">
                 <label class="contacts-form__label" for="phone">Контактный телефон*:</label>
