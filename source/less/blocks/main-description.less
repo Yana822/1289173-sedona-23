@@ -1,6 +1,11 @@
 .main-description {
   background: var(--pistachio-colored);
   color: var(--white);
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 .main-description__wrapper-headers {

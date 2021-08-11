@@ -2,10 +2,21 @@
   background: var(--pistachio-colored);
   color: var(--white);
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+  }
 }
 
 .description__wrapper-headers {
   padding: 55px 0 39px 0;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+
 }
 
 .description__title {
@@ -33,7 +44,6 @@
   margin: 0;
 }
 
-
 .description__image {
   display: block;
   background: url("../img/photo-bridge.jpg") center no-repeat #c0d6e4;
@@ -41,4 +51,8 @@
   height: 260px;
   background-size: cover;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+  }
 }

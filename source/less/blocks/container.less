@@ -1,7 +1,18 @@
 .container {
-  position: relative;
-  max-width: 280px;
-  padding: 0 15px;
   width: 100%;
-  margin: 0;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+    padding: 0 46px;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    padding: 0 74px;
+
+  }
 }

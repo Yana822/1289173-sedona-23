@@ -8,12 +8,33 @@
   margin: 0;
   text-align: left;
   padding-left: 70px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 68px;
+  }
 }
 
 .advantages__item {
   text-transform: uppercase;
   margin: 0 0 26px 0;
 }
+
+@media (min-width: @tablet-width) {
+  .advantages__item----lodging {
+    order: -1;
+  }
+
+  .advantages__item--souvenirs {
+    order: 1;
+  }
+
+  .advantages__item--food {
+    order: 0;
+  }
+}
+
 
 .advantages__title {
   font-style: normal;
