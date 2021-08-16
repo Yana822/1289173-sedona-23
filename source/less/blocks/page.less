@@ -1,11 +1,13 @@
 .page {
   min-width: 320px;
+  overflow-x: hidden;
   margin: 0;
   background-position: top center;
   background-repeat: no-repeat;
   text-align: center;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
+  height: 100%;
 }
 
 img {
@@ -16,4 +18,12 @@ img {
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+.page__body {
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }

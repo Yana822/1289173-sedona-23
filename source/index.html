@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Седона</title>
   <link href="css/normalize.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
@@ -68,15 +69,16 @@
     <section class="advantages">
       <div class="container">
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--
+          lodging">
             <h3 class="advantages__title">Жилье</h3>
             <p class="advantages__info">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--souvenirs">
             <h3 class="advantages__title">СУВЕНИРЫ</h3>
             <p class="advantages__info">Не только китайского, но и местного производства!</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--food">
             <h3 class="advantages__title">ЕДА</h3>
             <p class="advantages__info">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
           </li>
@@ -117,7 +119,8 @@
     <section class="hotel-search">
       <div class="container">
         <h3 class="hotel-search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
-        <p class="hotel-search__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшиепредложения гостиниц в
+        <p class="hotel-search__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+          в
           седоне</p>
         <a class="hotel-search__button button" href="#">НАЙТИ гостиницу</a>
       </div>
@@ -127,28 +130,30 @@
     <div class="map"></div>
     <section class="social">
       <div class="container">
-        <p class="social__hashtag">#VISITSEDONA</p>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"
-              aria-label="twitter">
+        <div class="social__grid">
+          <p class="social__hashtag">#VISITSEDONA</p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"
+                aria-label="twitter">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+                aria-label="facebook">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+                aria-label="youtube">
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано:</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
-              aria-label="facebook">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
-              aria-label="youtube">
-            </a>
-          </li>
-        </ul>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          </a>
+          </div>
         </div>
       </div>
     </section>
