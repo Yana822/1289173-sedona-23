@@ -2,6 +2,20 @@
   margin: 37px 0;
 }
 
+.form__grid {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__wrapper-headers {
+  @media (min-width: @tablet-width) {
+    max-width: 458px;
+    margin: 0 auto;
+  }
+}
+
 .form__title {
   font-style: normal;
   font-weight: bold;

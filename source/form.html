@@ -41,12 +41,16 @@
     </div>
     <section class="form">
       <div class="container">
+        <div class="form__wrapper-headers">
         <h2 class="form__title">Оставьте свой отзыв</h2>
         <p class="form__subtitle">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
           посещенных вами достопримечательностях
         </p>
+        </div>
+
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="form__grid">
           <div class="full-name">
             <p class="full-name__title">Представьтесь:</p>
             <p class="full-name__name">
@@ -63,7 +67,7 @@
                 placeholder="Александрович" />
             </p>
           </div>
-          <div class="contacts-form">
+          <div class="contacts-form contacts-form--tablet">
             <p class="contacts-form__title">Контактная информация:</p>
             <div class="contacts-form__wrapper">
               <p class="contacts-form__phone">
@@ -134,6 +138,7 @@
               </li>
             </ul>
           </div>
+        </div>
           <div class="emotion">
             <label for="text-letter" class="emotion__title">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
             <p class="emotion__comment">
@@ -141,36 +146,38 @@
                 placeholder="Опишите подробно все свои восторги"></textarea>
             </p>
           </div>
+
         </form>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="map"></div>
     <section class="social">
       <div class="container">
-        <p class="social__hashtag">#VISITSEDONA</p>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"
-              aria-label="twitter">
+        <div class="social__grid">
+          <p class="social__hashtag">#VISITSEDONA</p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"
+                aria-label="twitter">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+                aria-label="facebook">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+                aria-label="youtube">
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано:</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
-              aria-label="facebook">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
-              aria-label="youtube">
-            </a>
-          </li>
-        </ul>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          </a>
+          </div>
         </div>
       </div>
     </section>
