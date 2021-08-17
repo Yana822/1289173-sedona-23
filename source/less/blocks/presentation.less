@@ -2,6 +2,18 @@
   text-transform: uppercase;
 }
 
+.presentation__video {
+  @media (min-width: @tablet-width) {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
 .presentation__title {
   font-style: normal;
   font-weight: bold;
@@ -18,4 +30,14 @@
   line-height: 24px;
   color: var(--black-olive);
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    max-width: 445px;
+  }
+}
+
+.presentation__range {
+  margin: 0 auto;
+  display: block;
 }
