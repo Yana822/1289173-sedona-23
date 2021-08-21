@@ -7,7 +7,7 @@
   @media (min-width: @tablet-width) {
     background-color: var(--white);
   }
-}
+    }
 
 .main-nav__list {
   list-style: none;
@@ -38,91 +38,38 @@
   }
 }
 
-
-.main-nav__toggle {
+.main-nav--closed .main-nav__toggle {
+  top: 17px;
+  right: 21px;
+  background: url(../img/icon-menu.svg) 0 0 no-repeat;
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  display: block;
-  width: 22px;
+  width: 23px;
   height: 22px;
+  border: 0;
   cursor: pointer;
-  border: none;
-  &:hover,
-  &:active {
-    background-color: #624530;
-  }
-  @media (min-width: @tablet-width) {
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__item {
     display: none;
   }
 }
 
-
-/*закрытое меню*/
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  right: 20px;
-  width: 22px;
-  height: 4px;
-  background-color: var(--white);
-  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
-
-  @media (max-width: @mobile-width-only) {
-    .main-nav--closed .site-list__item {
-      display: none;
-    }
-
-    &--active {
-      display: block;
-    }
-
-
-
-    .main-nav--closed {
-      display: none;
-    }
-  }
-}
-
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: fade(#ffffff, 30%);
-  box-shadow:
-    0 8px 0 0 fade(#ffffff, 30%),
-    0 16px 0 0 fade(#ffffff, 30%);
-}
-
-/*открытое меню*/
 .main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: auto;
-  left: 0;
+  top: 17px;
+  right: 21px;
+  background: url(../img/icon-cross.svg) 0 0 no-repeat;
+  background-color: var(--pistachio-colored);
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  border: 0;
+  cursor: pointer;
+}
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 24px;
-    right: 18px;
-    width: 22px;
-    height: 2px;
-    background-color: #ffffff;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
-  &:active::before,
-  &:active::after {
-    background-color: fade(#ffffff, 30%);
+.main-nav__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -130,16 +77,13 @@
   display: none;
 }
 
-.main-nav--nojs .main-nav__wrapper {
-  position: static;
-  min-height: 0;
-}
-
-.main-nav--nojs {
+.main-nav--nojs .site-list__item {
   display: block;
 }
 
-.main-nav--nojs {
-  display: block;
-  background-color: var(--pistachio-colored);
-}
+  .main-nav--closed .main-nav{
+    @media (max-width: @mobile-width-only){
+background-color: var(--white);
+    }
+  }
+
