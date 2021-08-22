@@ -4,18 +4,22 @@
   width: 100%;
   height: 390px;
   background-size: cover;
-}
-/* непонятно шо получилось
-.welcome-block__image {
-display: block;
-background-image: url(../img/text-index.png);
-background-position: 0 110px;
-background-size: 282px 214px;
-background-repeat: no-repeat;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 57px;
+    background: url("../img/intro-triangle.svg") center no-repeat;
+  }
 }
 
-*/
-
+.welcome-block__image-text {
+  padding-top: 49px;
+}
 
 .welcome-block__wrapper-headers {
   margin-top: 32px;

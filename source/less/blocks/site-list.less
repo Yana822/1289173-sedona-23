@@ -1,6 +1,24 @@
 .site-list {
+  background-color: var(--pistachio-colored);
+
   @media (min-width: @tablet-width) {
+    flex-wrap: wrap;
     width: 694px;
+    min-width: 150px;
+    border: 0;
     flex-grow: 1;
+    background-color: var(--white);
   }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item:nth-child(3) {
+    margin-left: auto;
+  }
+}
+
+.site-list__item a {
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
