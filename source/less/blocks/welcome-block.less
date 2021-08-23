@@ -4,6 +4,21 @@
   width: 100%;
   height: 390px;
   background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 57px;
+    background: url("../img/intro-triangle.svg") center no-repeat;
+  }
+}
+
+.welcome-block__image-text {
+  padding-top: 49px;
 }
 
 .welcome-block__wrapper-headers {
