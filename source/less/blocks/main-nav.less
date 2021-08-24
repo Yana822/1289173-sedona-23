@@ -61,6 +61,7 @@
   cursor: pointer;
 }
 
+
 .main-nav__toggle {
   @media (min-width: @tablet-width) {
     display: none;
@@ -73,4 +74,10 @@
 
 .main-nav--nojs .site-list__item {
   display: block;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--opened .page-header__logo {
+    display: none;
+  }
 }

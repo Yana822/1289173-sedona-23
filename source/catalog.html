@@ -11,31 +11,52 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="#" width="102" height="84" alt="Седона" />
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="container">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html"> Главная </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html"> ФОТО И ВИДЕО </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html"> Форма Отзыва </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#"> HTML Academy </a>
-          </li>
-        </ul>
-      </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <a class="page-header__logo">
+        <img src="../img/logo-mobile.svg" width="102" height="84" alt="Седона">
+      </a>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a>
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">
+            ФОТО И ВИДЕО
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Форма Отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
+  <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+
+  </script>
   <main class="page-main">
     <div class="page-main__image">
     </div>
@@ -132,25 +153,23 @@
         <div class="social__grid">
           <p class="social__hashtag">#VISITSEDONA</p>
           <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"
-                aria-label="twitter">
+            <li class="social__item social__item--twitter">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="twitter">
               </a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
-                aria-label="facebook">
+            <li class="social__item social__item--facebook">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="facebook">
               </a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
-                aria-label="youtube">
+            <li class="social__item social__item--youtube">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube">
               </a>
             </li>
           </ul>
           <div class="page-footer__copyright copyright">
             <p class="copyright__text">Разработано:</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="../img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
             </a>
           </div>
         </div>

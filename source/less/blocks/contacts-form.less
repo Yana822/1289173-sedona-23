@@ -32,10 +32,41 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
+  position: relative;
 }
 
 .contacts-form__phone {
   margin-bottom: 14px;
+}
+
+.contacts-form__phone{
+
+&::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    background: #e6e6e6 url(../img/phone.svg) center no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+}
+
+.contacts-form__email{
+
+&::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    background: #e6e6e6 url(../img/mail.svg) center no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 }
 
 .contacts-form__input {
@@ -45,4 +76,6 @@
   line-height: 26px;
   color: var(--black);
   background: var(--very-light-gray);
+  border: none;
+  padding: 6px;
 }
