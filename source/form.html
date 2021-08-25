@@ -18,7 +18,7 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a>
+          <a href="index.html">
             Главная
           </a>
         </li>
@@ -28,7 +28,7 @@
           </a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">
+          <a>
             Форма Отзыва
           </a>
         </li>
@@ -41,21 +41,20 @@
     </nav>
   </header>
   <script>
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
 
-  navMain.classList.remove('main-nav--nojs');
+    navMain.classList.remove('main-nav--nojs');
 
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
-
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
   </script>
   <main class="page-main">
     <div class="page-main__image">
@@ -115,14 +114,14 @@
               </li>
               <li class="impression__item">
                 <label class="toggle" for="value2">
-                  <input class="visually-hidden" type="radio" name="rating" id="value2" checked />
+                  <input class="visually-hidden" type="radio" name="rating" id="value2"/>
                   <span class="toggle__radio"></span>
                   Скорее отрицательное
                 </label>
               </li>
               <li class="impression__item">
                 <label class="toggle" for="value3">
-                  <input class="visually-hidden" type="radio" name="rating" id="value3" checked />
+                  <input class="visually-hidden" type="radio" name="rating" id="value3"/>
                   <span class="toggle__radio"></span>
                   Затрудняюсь ответить
                 </label>
@@ -152,7 +151,7 @@
               </li>
               <li class="attraction__item">
                 <label class="toggle" for="variant4">
-                  <input class="visually-hidden" type="checkbox" id="variant4" name="variant" checked="checked" />
+                  <input class="visually-hidden" type="checkbox" id="variant4" name="variant"/>
                   <span class="toggle__checkbox"></span>
                   Красные скалы</label>
               </li>

@@ -18,12 +18,12 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a>
+          <a href="index.html">
             Главная
           </a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">
+          <a>
             ФОТО И ВИДЕО
           </a>
         </li>
@@ -41,21 +41,20 @@
     </nav>
   </header>
   <script>
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
 
-  navMain.classList.remove('main-nav--nojs');
+    navMain.classList.remove('main-nav--nojs');
 
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
-
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
   </script>
   <main class="page-main">
     <div class="page-main__image">

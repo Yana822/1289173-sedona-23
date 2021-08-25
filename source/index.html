@@ -41,21 +41,20 @@
     </nav>
   </header>
   <script>
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.main-nav__toggle');
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
 
-  navMain.classList.remove('main-nav--nojs');
+    navMain.classList.remove('main-nav--nojs');
 
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
-
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
   </script>
   <main class="page-main">
     <h1 class="visually-hidden">СЕДОНА — небольшой городок в АРИЗОНЕ</h1>
@@ -86,7 +85,7 @@
       <div class="container">
         <ul class="advantages__list">
           <li class="advantages__item advantages__lodging advantages__item--
-          lodging ">
+          lodging">
             <h3 class="advantages__title">Жилье</h3>
             <p class="advantages__info">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
