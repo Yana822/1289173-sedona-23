@@ -44,10 +44,10 @@
 &::after {
     content: "";
     position: absolute;
-    top: 10;
+    top: 26px;
     right: 0;
-    width: 58px;
-    height: 58px;
+    width: 56px;
+    height: 56px;
     background: var(--pale-gray) url(../img/phone.svg) center no-repeat;
     background-repeat: no-repeat;
 }
@@ -58,10 +58,10 @@
 &::after {
     content: "";
     position: absolute;
-    top: 10;
+    top: 26px;
     right: 0;
-    width: 58px;
-    height: 58px;
+    width: 56px;
+    height: 56px;
     background: var(--pale-gray) url(../img/mail.svg) center no-repeat;
     background-repeat: no-repeat;
 }
@@ -75,5 +75,9 @@
   color: var(--black);
   background: var(--very-light-gray);
   border: none;
-  padding: 16px 20px;
+  height: 56px;
+  width: 100%;
+  padding: 0;
+  @media (min-width: @tablet-width){
+  }
 }

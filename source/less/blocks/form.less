@@ -10,6 +10,20 @@
 }
 
 .form__wrapper-headers {
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 180px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    @media (min-width: @tablet-width){
+      display: none;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     max-width: 458px;
     margin: 0 auto;
