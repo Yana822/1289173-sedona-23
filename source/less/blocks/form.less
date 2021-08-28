@@ -3,6 +3,9 @@
 }
 
 .form__grid {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -11,7 +14,8 @@
 
 .form__wrapper-headers {
   position: relative;
-  &::before{
+
+  &::before {
     content: "";
     position: absolute;
     top: 180px;
@@ -19,7 +23,8 @@
     width: 320px;
     height: 1px;
     background-color: #e5e5e5;
-    @media (min-width: @tablet-width){
+
+    @media (min-width: @tablet-width) {
       display: none;
     }
   }

@@ -1,11 +1,27 @@
 .impression {
   margin-bottom: 56px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 310px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: var(--pale-gray);
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     order: 1;
     max-width: 330px;
   }
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     padding-left: 58px;
   }
 }

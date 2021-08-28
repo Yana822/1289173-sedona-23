@@ -1,29 +1,98 @@
 .emotion {
   margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    order: 5;
+  }
 }
 
 .emotion__title {
+  position: relative;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   color: var(--black);
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 125px;
+      height: 1px;
+      left: 0;
+      background-color: var(--pale-gray);
+
+      @media (min-width: @desktop-width) {
+        width: 279px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 125px;
+      height: 1px;
+      background-color: var(--pale-gray);
+
+      @media (min-width: @desktop-width) {
+        width: 279px;
+      }
+    }
+  }
 }
 
-.emotion__comment {
-  margin: 0;
-}
-
-.emotion__comment-textarea{
-  width: 100%;
+.emotion__comment-textarea {
   height: auto;
   padding: 12px 20px;
-  background-color:  var(--very-light-gray);
+  background-color: var(--very-light-gray);
   border: 2px solid var(--very-light-gray);
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: var(--black);
+  margin-top: 15px;
+  margin-bottom: 51px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 55px;
+  }
 }
 
+.emotion__button {
+  padding: 10px 35px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 324px;
+    padding: 16px;
+  }
+}
+
+.emotion__button-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.emotion__note {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}

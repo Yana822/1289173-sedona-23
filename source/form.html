@@ -46,7 +46,7 @@
 
     navMain.classList.remove('main-nav--nojs');
 
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function () {
       if (navMain.classList.contains('main-nav--closed')) {
         navMain.classList.remove('main-nav--closed');
         navMain.classList.add('main-nav--opened');
@@ -55,116 +55,129 @@
         navMain.classList.remove('main-nav--opened');
       }
     });
+
   </script>
   <main class="page-main">
-    <div class="page-main__image">
-    </div>
+    <section class="welcome-block">
+      <div class="welcome-block__image">
+        <img class="welcome-block__image-text" src="../img/sedona.svg" width="282" height="214" alt="">
+      </div>
+      <div class="container">
+        <div class="welcome-block__wrapper-headers">
+          <h2 class="welcome-block__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h2>
+          <p class="welcome-block__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </div>
+    </section>
     <section class="form">
       <div class="container">
         <div class="form__wrapper-headers">
-        <h2 class="form__title">Оставьте свой отзыв</h2>
-        <p class="form__subtitle">
-          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
-          посещенных вами достопримечательностях
-        </p>
+          <h2 class="form__title">Оставьте свой отзыв</h2>
+          <p class="form__subtitle">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+            посещенных вами достопримечательностях
+          </p>
         </div>
-
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="form__grid">
-          <div class="full-name">
-            <p class="full-name__title">Представьтесь:</p>
+            <div class="full-name">
+              <p class="full-name__title">Представьтесь:</p>
 
               <label class="full-name__label" for="name">ИМЯ*:</label>
-              <input class="full-name__input full-name__input--name" id="name" type="text" name="name" placeholder="Петр" />
+              <input class="full-name__input full-name__input--name" id="name" type="text" name="name"
+                placeholder="Петр" />
 
 
               <label class="full-name__label" for="surname">ФАМИЛИЯ*:</label>
-              <input class="full-name__input full-name__input--surname" id="surname" type="text" name="surname" placeholder="Иванов" />
-              
+              <input class="full-name__input full-name__input--surname" id="surname" type="text" name="surname"
+                placeholder="Иванов" />
+
               <label class="full-name__label" for="patronymic">ОТЧЕСТВО*:</label>
               <input class="full-name__input full-name__input--patronymic" id="patronymic" type="text" name="patronymic"
                 placeholder="Александрович" />
 
-          </div>
-          <div class="contacts-form contacts-form--tablet">
-            <p class="contacts-form__title">Контактная информация:</p>
-            <div class="contacts-form__wrapper">
-              <div class="contacts-form__phone">
-                <label class="contacts-form__label" for="phone">Контактный телефон*:</label>
-                <input class="contacts-form__input contacts-form__input--phone" id="phone" type="tel" name="phone"
-                  placeholder="Введите телефон" />
-              </div>
-              <p class="contacts-form__email">
-                <label class="contacts-form__label" for="email">Электронная почта*:</label>
-                <input class="contacts-form__input contacts-form__input--email" id="email" type="email" name="email"
-                  placeholder="Введите e-mail" />
-              </p>
             </div>
-          </div>
-          <div class="impression">
-            <p class="impression__title">Ваше Общее впечатление:</p>
-            <ul class=" impression__list">
-              <li class="impression__item">
-                <label class="toggle" for="value1">
-                  <input class="visually-hidden" type="radio" name="rating" id="value1" checked />
-                  <span class="toggle__radio"></span>
-                  Скорее положительное
-                </label>
-              </li>
-              <li class="impression__item">
-                <label class="toggle" for="value2">
-                  <input class="visually-hidden" type="radio" name="rating" id="value2"/>
-                  <span class="toggle__radio"></span>
-                  Скорее отрицательное
-                </label>
-              </li>
-              <li class="impression__item">
-                <label class="toggle" for="value3">
-                  <input class="visually-hidden" type="radio" name="rating" id="value3"/>
-                  <span class="toggle__radio"></span>
-                  Затрудняюсь ответить
-                </label>
-              </li>
-            </ul>
-          </div>
-          <div class="аttraction">
-            <p class="attraction__title">посещенные достопримечательности:</p>
-            <ul class="attraction__list">
-              <li class="attraction__item">
-                <label class="toggle" for="variant1">
-                  <input class="visually-hidden" type="checkbox" id="variant1" name="variant" checked="checked" />
-                  <span class="toggle__checkbox"></span>
-                  Мост Дьявола</label>
-              </li>
-              <li class="attraction__item">
-                <label class="toggle" for="variant2">
-                  <input class="visually-hidden" type="checkbox" id="variant2" name="variant" checked="checked" />
-                  <span class="toggle__checkbox"></span>
-                  Гора-Колокол</label>
-              </li>
-              <li class="attraction__item">
-                <label class="toggle" for="variant3">
-                  <input class="visually-hidden" type="checkbox" id="variant3" name="variant" checked="checked" />
-                  <span class="toggle__checkbox"></span>
-                  Слайд-парк</label>
-              </li>
-              <li class="attraction__item">
-                <label class="toggle" for="variant4">
-                  <input class="visually-hidden" type="checkbox" id="variant4" name="variant"/>
-                  <span class="toggle__checkbox"></span>
-                  Красные скалы</label>
-              </li>
-            </ul>
-          </div>
-        </div>
-          <div class="emotion">
-            <label for="text-letter" class="emotion__title">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
-            <p class="emotion__comment">
+            <div class="contacts-form contacts-form--tablet">
+              <p class="contacts-form__title">Контактная информация:</p>
+              <div class="contacts-form__wrapper">
+                <div class="contacts-form__phone">
+                  <label class="contacts-form__label" for="phone"><span class="contacts-form--hidden">Контактный</span>
+                    телефон*:</label>
+                  <input class="contacts-form__input contacts-form__input--phone" id="phone" type="tel" name="phone"
+                    placeholder="Введите телефон" />
+                </div>
+                <div class="contacts-form__email">
+                  <label class="contacts-form__label" for="email">Электронная почта*:</label>
+                  <input class="contacts-form__input contacts-form__input--email" id="email" type="email" name="email"
+                    placeholder="Введите e-mail" />
+                </div>
+              </div>
+            </div>
+            <div class="impression">
+              <p class="impression__title">Ваше Общее впечатление:</p>
+              <ul class=" impression__list">
+                <li class="impression__item">
+                  <label class="toggle" for="value1">
+                    <input class="visually-hidden" type="radio" name="rating" id="value1" checked />
+                    <span class="toggle__radio"></span>
+                    Скорее положительное
+                  </label>
+                </li>
+                <li class="impression__item">
+                  <label class="toggle" for="value2">
+                    <input class="visually-hidden" type="radio" name="rating" id="value2" />
+                    <span class="toggle__radio"></span>
+                    Скорее отрицательное
+                  </label>
+                </li>
+                <li class="impression__item">
+                  <label class="toggle" for="value3">
+                    <input class="visually-hidden" type="radio" name="rating" id="value3" />
+                    <span class="toggle__radio"></span>
+                    Затрудняюсь ответить
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="аttraction">
+              <p class="attraction__title">посещенные достопримечательности:</p>
+              <ul class="attraction__list">
+                <li class="attraction__item">
+                  <label class="toggle" for="variant1">
+                    <input class="visually-hidden" type="checkbox" id="variant1" name="variant" checked="checked" />
+                    <span class="toggle__checkbox"></span>
+                    Мост Дьявола</label>
+                </li>
+                <li class="attraction__item">
+                  <label class="toggle" for="variant2">
+                    <input class="visually-hidden" type="checkbox" id="variant2" name="variant" checked="checked" />
+                    <span class="toggle__checkbox"></span>
+                    Гора-Колокол</label>
+                </li>
+                <li class="attraction__item">
+                  <label class="toggle" for="variant3">
+                    <input class="visually-hidden" type="checkbox" id="variant3" name="variant" checked="checked" />
+                    <span class="toggle__checkbox"></span>
+                    Слайд-парк</label>
+                </li>
+                <li class="attraction__item">
+                  <label class="toggle" for="variant4">
+                    <input class="visually-hidden" type="checkbox" id="variant4" name="variant" />
+                    <span class="toggle__checkbox"></span>
+                    Красные скалы</label>
+                </li>
+              </ul>
+            </div>
+            <div class="emotion">
+              <label for="text-letter" class="emotion__title">ОПИШИТЕ СВОИ ЭМОЦИИ:</label>
               <textarea class="emotion__comment-textarea" rows="5" id="text-letter" name="text-letter"
                 placeholder="Опишите подробно все свои восторги"></textarea>
-            </p>
+              <div class="emotion__button-wrapper">
+                <a class="emotion__button button" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
+                <span class="emotion__note">* — обязательные поля</span>
+              </div>
+            </div>
           </div>
-
         </form>
       </div>
     </section>
@@ -176,15 +189,18 @@
           <p class="social__hashtag">#VISITSEDONA</p>
           <ul class="social__list">
             <li class="social__item social__item--twitter">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="twitter">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"
+                aria-label="twitter">
               </a>
             </li>
             <li class="social__item social__item--facebook">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="facebook">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+                aria-label="facebook">
               </a>
             </li>
             <li class="social__item social__item--youtube">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+                aria-label="youtube">
               </a>
             </li>
           </ul>

@@ -1,5 +1,7 @@
 .full-name {
-  &::before{
+  position: relative;
+
+  &::before {
     content: "";
     position: absolute;
     left: 0;
@@ -7,26 +9,46 @@
     height: 292px;
     background-color: var(--light--silver);
   }
+
   @media (min-width: @tablet-width) {
     order: 2;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 325px;
-    position: relative;
     padding-left: 58px;
   }
 }
+
 .full-name {
-  &::before{
-content: "";
-position: absolute;
-top: 180px;
-left: -20px;
-width: 320px;
-height: 1px;
-background-color: #e5e5e5;
-}}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 280px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: var(--pale-gray);
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.full-name &::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 1px;
+  height: 290px;
+  background-color: var(--pale-gray);
+
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
 
 .full-name__title {
   font-style: normal;
@@ -62,14 +84,14 @@ background-color: #e5e5e5;
   height: 58px;
 }
 
-.full-name__input--name{
+.full-name__input--name {
   width: 230px;
 }
 
-.full-name__input--surname{
+.full-name__input--surname {
   width: 192px;
 }
 
-.full-name__input--patronymic{
+.full-name__input--patronymic {
   width: 194px;
 }
