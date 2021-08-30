@@ -40,8 +40,26 @@
 }
 
 .gallery__item {
+  text-align: left;
+  position: relative;
+  margin-bottom: 60px;
+
   @media (min-width: @desktop-width) {
     position: relative;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 380px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: var(--pale-gray);
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -82,6 +100,7 @@
     margin: 0;
     text-align: left;
     padding: 14px 20px 18px;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -127,4 +146,24 @@
   line-height: 24px;
   margin: 0;
   text-transform: uppercase;
+  position: relative;
+  padding-left: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 23px;
+    height: 21px;
+    background-image: url("../img/like-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.gallery__like-button {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
 }

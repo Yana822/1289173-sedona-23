@@ -1,15 +1,28 @@
 .presentation {
+  position: relative;
   text-transform: uppercase;
 }
 
 .presentation__video {
   @media (min-width: @tablet-width) {
-    max-width: 500px;
+    max-width: 648px;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.presentation__title-wrapper {
+  width: 266px;
+  margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 73px;
+    width: 480px;
     margin: 0 auto;
   }
 }
@@ -34,6 +47,23 @@
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     max-width: 445px;
+  }
+}
+
+.presentation__range-wrapper {
+  position: absolute;
+  top: 325px;
+  left: 15px;
+  width: 280px;
+  height: 45px;
+  background-color: var(--black);
+  opacity: .6;
+
+  @media (min-width: @tablet-width) {
+    top: 525px;
+    left: 53px;
+    width: 648px;
+    height: 93px;
   }
 }
 
