@@ -2,6 +2,7 @@
   position: relative;
   width: auto;
   min-height: 55px;
+
 }
 
 .main-nav__list {
@@ -61,6 +62,17 @@
   cursor: pointer;
 }
 
+.main-nav--opened {
+  @media (max-width: @mobile-width-only) {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+  }
+}
+
 .main-nav__toggle {
   @media (min-width: @tablet-width) {
     display: none;
@@ -73,4 +85,10 @@
 
 .main-nav--nojs .site-list__item {
   display: block;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--opened .page-header__logo {
+    display: none;
+  }
 }

@@ -1,5 +1,19 @@
 .аttraction {
-  margin-bottom: 60px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 430px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: var(--pale-gray);
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     order: 4;
@@ -8,12 +22,43 @@
 }
 
 .attraction__title {
+  position: relative;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 125px;
+      height: 1px;
+      left: 0;
+      background-color: var(--pale-gray);
+
+      @media (min-width: @desktop-width) {
+        width: 279px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 125px;
+      height: 1px;
+      background-color: var(--pale-gray);
+
+      @media (min-width: @desktop-width) {
+        width: 279px;
+      }
+    }
+  }
 }
 
 .attraction__list {
@@ -21,6 +66,11 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  list-style: none;
+  padding: 0;
+  max-width: 465px;
+  margin: 0 auto;
+  margin-top: 35px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -28,10 +78,22 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 960px;
+    justify-content: space-between;
   }
 }
 
 .attraction__item {
+  display: flex;
   margin-bottom: 43px;
+}
+
+.attraction__item label {
+  @media (min-width: @desktop-width) {
+    align-items: center;
+    display: flex;
+  }
 }
