@@ -6,7 +6,6 @@
   cursor: pointer;
 }
 
-
 .toggle__checkbox {
   display: inline-block;
   vertical-align: top;
@@ -16,34 +15,34 @@
   border-radius: 2px;
   position: relative;
   margin-right: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 10px;
+    height: 20px;
+    border-right: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+    transform: rotate(45deg);
+  }
 }
 
-.toggle__checkbox &::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  width: 10px;
-  height: 20px;
-  border-right: 2px solid var(--black);
-  border-bottom: 2px solid var(--black);
-  transform: rotate(45deg);
-  display: none;
+input:disabled~.toggle__checkbox {
+  border-color: var(--pale-gray);
+
 }
 
-input:disabled.toggle__checkbox {
+input:hover~.toggle__checkbox {
   border-color: var(--pale-gray);
 }
 
-input:hover.toggle__checkbox {
-  border-color: #283645;
+input:active~.toggle__checkbox {
+  border-color: var(--pale-gray);
 }
 
-input:active.toggle__checkbox {
-  border-color: #D22856;
-}
-
-input:checked.toggle__checkbox &::before {
+input:checked~.toggle__checkbox &::before {
   display: block;
 }
 
@@ -56,31 +55,29 @@ input:checked.toggle__checkbox &::before {
   background: var(--very-light-gray);
   position: relative;
   margin-right: 25px;
-}
 
-.toggle__radio &::before {
-  content: '';
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #333333;
-  display: none;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--black-olive);
+  }
 }
 
 input:disabled.toggle__radio {
   border-color: var(--pale-gray);
-
 }
 
 input:hover.toggle__radio {
-  border-color: #283645;
+  border-color: var(--pale-gray);
 }
 
 input:active.toggle__radio {
-  border-color: #D22856;
+  border-color: var(--pale-gray);
 }
 
 input:checked.toggle__radio::before {

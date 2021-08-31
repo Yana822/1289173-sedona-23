@@ -10,17 +10,6 @@
     background-color: var(--light--silver);
   }
 
-  @media (min-width: @tablet-width) {
-    order: 2;
-  }
-
-  @media (min-width: @desktop-width) {
-    max-width: 325px;
-    padding-left: 58px;
-  }
-}
-
-.full-name {
   &::before {
     content: "";
     position: absolute;
@@ -33,6 +22,15 @@
     @media (min-width: @tablet-width) {
       display: none;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 325px;
+    padding-left: 58px;
   }
 }
 
