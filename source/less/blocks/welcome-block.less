@@ -1,15 +1,18 @@
 .welcome-block__image {
   display: block;
-  background: url("../img/back-mobile.jpg") center no-repeat #c0d6e4;
+  background: url("../img/back-desktop.jpg") center no-repeat #c0d6e4;
   width: 100%;
   height: 390px;
-  background-size: cover;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-desktop@2x.jpg");
+  }
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 57px;
@@ -18,12 +21,12 @@
 }
 
 .welcome-block__image-text {
-  padding-top: 49px;
+  padding-top: 150px;
 }
 
 .welcome-block__wrapper-headers {
   margin-top: 32px;
-  margin-bottom: 11px;
+  margin-bottom: 8px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
@@ -38,7 +41,8 @@
   line-height: 26px;
   margin: 0;
   color: var(--black);
-  margin-bottom: 44px;
+  margin-bottom: 35px;
+  max-width: 270px;
 }
 
 .welcome-block__subtitle {
