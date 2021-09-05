@@ -5,6 +5,8 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    min-width: 768px;
+    margin: 0 auto;
   }
 }
 
@@ -59,30 +61,6 @@
 
 .main-description__image {
   display: block;
-  background: url("../img/photo-city-mobile.jpg") no-repeat #c0d6e4;
   width: 100%;
   height: 260px;
-  background-position: center;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/photo-city-mobile@2x.jpg");
-  }
-
-  @media (min-width: @tablet-width){
-    background: url("../img/photo-city-tablet.jpg") no-repeat #c0d6e4;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/photo-city-tablet@2x.jpg");
-    }
-  }
-
-  @media (min-width: @desktop-width){
-    background: url("../img/photo-city-desktop.jpg") no-repeat #c0d6e4;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/photo-city-desktop@2x.jpg");
-    }
-  }
-
-
 }
