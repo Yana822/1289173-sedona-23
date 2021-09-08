@@ -1,5 +1,9 @@
 .advantages {
   margin: 35px 0 35px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 35px 0 32px 0;
+  }
 }
 
 .advantages__list {
@@ -11,8 +15,7 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 68px;
+    grid-template-columns: 256px 256px 256px;
     padding: 0;
     text-align: center;
   }
@@ -24,7 +27,11 @@
   max-width: 193px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 158px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-left: 25px;
   }
 }
 
@@ -44,8 +51,8 @@
     background-size: contain;
 
     @media (min-width: @tablet-width) {
-      top: 50px;
-      left: 60px;
+      top: 22px;
+      left: 89px;
       width: 75px;
       height: 72px;
     }
@@ -68,8 +75,8 @@
     background-size: contain;
 
     @media (min-width: @tablet-width) {
-      top: 50px;
-      left: 60px;
+      top: 20px;
+      left: 97px;
       width: 75px;
       height: 72px;
     }
@@ -92,8 +99,8 @@
     background-size: contain;
 
     @media (min-width: @tablet-width) {
-      top: 50px;
-      left: 60px;
+      top: 25px;
+      left: 89px;
       width: 75px;
       height: 72px;
     }
@@ -104,6 +111,7 @@
   .advantages__item----lodging {
     order: -1;
   }
+}
 
   .advantages__item--souvenirs {
     order: 1;
@@ -112,7 +120,6 @@
   .advantages__item--food {
     order: 0;
   }
-}
 
 .advantages__title {
   font-style: normal;
@@ -120,6 +127,10 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0 0 18px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 25px 0;
+  }
 }
 
 .advantages__info {
@@ -130,3 +141,4 @@
   margin: 0;
   width: 210px;
 }
+
