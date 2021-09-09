@@ -61,13 +61,13 @@
   </script>
   <main class="page-main">
     <h1 class="visually-hidden">СЕДОНА — небольшой городок в АРИЗОНЕ</h1>
-
     <section class="welcome-block">
-
       <div class="welcome-block__image">
+
+
         <picture>
-          <source media="(min-width: 768px)" srcset="../img/text-index-tablet.svg">
-          <img src="../img/text-index-mobile.svg" alt="Седона">
+          <source media="(min-width: 768px)" srcset="../img/text-index-tablet.png">
+          <img src="../img/text-index-mobile.png" alt="Седона">
         </picture>
       </div>
       <div class="container">
@@ -78,7 +78,7 @@
       </div>
     </section>
     <section class="main-description">
-      <div class="container container--none-tablet">
+      <div class="container container--none-tablet container--none-desktop">
         <div class="main-description__wrapper-headers">
           <h2 class="main-description__title">НАСТОЯЩИЙ ГОРОДОК
           </h2>
@@ -116,14 +116,21 @@
       </div>
     </section>
     <section class="description">
-      <div class="container">
+      <div class="container container--none-tablet container--none-desktop">
         <div class="description__wrapper-headers">
           <h2 class="description__title">ТАМ ЕСТЬ<br> Мост дьявола</h2>
           <p class="main-description__number">— №2 —</p>
           <p class="description__subtitle">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
       </div>
-      <div class="description__image"></div>
+      <div class="description__image">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+          <img class="image" src="/img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x"
+            alt="фото города">
+        </picture>
+      </div>
     </section>
     <section class="additional-benefits">
       <div class="container container--none-tablet">
@@ -147,7 +154,7 @@
       </div>
     </section>
     <section class="hotel-search">
-      <div class="container">
+      <div class="container container--none-tablet">
         <h3 class="hotel-search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
         <p class="hotel-search__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
           в
