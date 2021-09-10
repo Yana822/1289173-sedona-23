@@ -27,10 +27,21 @@
   }
 }
 
-.social__item {
+.social__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 47px;
   height: 48px;
-  background-color: #81b3d2;
+  background-color: var(--pistachio-colored);
+
+  &:hover{
+    background-color: var(--blue-steel);
+  }
+
+  &:active{
+    background-color:var(--azure-color);
+  }
 }
 
 .social__hashtag {
@@ -51,5 +62,13 @@
   @media (min-width: @desktop-width){
     margin-top: 50px;
     margin-right: 123px;
+  }
+}
+
+.social__link-icon{
+  fill: #FFFFFF;
+
+  &:active{
+  fill: rgba(255, 255, 255, 0.3);
   }
 }
