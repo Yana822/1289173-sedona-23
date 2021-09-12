@@ -44,4 +44,11 @@
 <path d="M0 0v6h3V3h3V0H0ZM3 14H0v6h6v-3H3v-3ZM17 0h-3v3h3v3h3V0h-3ZM17 17h-3v3h6v-6h-3v3Z" fill="#5C6870"/>
 </symbol>
 
+<symbol viewBox="0 0 23 22" id="icon-menu-closed">
+<path d="M22.9 0H0v4h22.9V0zM22.9 9H0v4h22.9V9zM22.9 18H0v4h22.9v-4z"/>
+</symbol>
+
+<symbol viewBox="0 0 23 23" id="icon-menu-opened">
+<path d="M22.2 2.8L19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3z" fill="#fff"/></svg>
+</symbol>
 </svg>
