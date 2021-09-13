@@ -63,17 +63,11 @@
   </script>
   <main class="page-main">
     <section class="welcome-block">
-      <div class="welcome-block__image">
+      <div class="welcome-block__image welcome-block__image--small">
         <picture>
           <source media="(min-width: 768px)" srcset="../img/text-index-tablet2.png">
           <img src="../img/text-index-mobile2.png" alt="Седона">
         </picture>
-      </div>
-      <div class="container">
-        <div class="welcome-block__wrapper-headers">
-          <h2 class="welcome-block__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h2>
-          <p class="welcome-block__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
       </div>
     </section>
     <div class="container container--none-desktop">
@@ -90,36 +84,43 @@
 
 
             <a class="gallery__link" href="#">
-            <div class="gallery__content-photo">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                <img src="/img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" style="width: 100%;"
-                  alt="неродные просторы" />
-              </picture>
-            </div>
-          </a>
+              <div class="gallery__content-photo">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                  <img src="/img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" style="width: 100%;"
+                    alt="неродные просторы" />
+                </picture>
+              </div>
+            </a>
             <div class="gallery__content gallery__content--top">
               <div class="gallary__wrapper">
                 <p class="gallery__name">неродные просторы</p>
                 <p class="gallery__author">Автор фото: Борис</p>
               </div>
               <div class="gallery__like">
-                <button class="gallery__like-button" type="button" aria-label="Нравится"></button>
-                <span class="gallery__like-sum">1350</span>
+                <button class="gallery__like-button" type="button" aria-label="Нравится">
+                  <svg class="gallery__like-icon" width="23" height="21">
+                    <use xlink:href="../img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span class="gallery__like-sum">1350</span>
+                </button>
+
               </div>
             </div>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-            <div class="gallery__content-photo">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                <img src="/img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" style="width: 100%;"
-                  alt="Местная растительность" />
-              </picture>
-            </div>
+              <div class="gallery__content-photo">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img src="/img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" style="width: 100%;"
+                    alt="Местная растительность" />
+                </picture>
+              </div>
             </a>
 
             <div class="gallery__content">
@@ -128,52 +129,66 @@
                 <p class="gallery__author">Автор фото: Сергей</p>
               </div>
               <div class="gallery__like">
-                <button class="gallery__like-button" type="button" aria-label="Нравится"></button>
-                <span class="gallery__like-sum">143</span>
+                <button class="gallery__like-button" type="button" aria-label="Нравится">
+                  <svg class="gallery__like-icon" width="23" height="21">
+                    <use xlink:href="../img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span class="gallery__like-sum">143</span>
+                </button>
               </div>
             </div>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-            <div class="gallery__content-photo">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-                <img src="/img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" style="width: 100%;"
-                  alt="Дорога на север" />
-              </picture>
-            </div>
-          </a>
+              <div class="gallery__content-photo">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img src="/img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" style="width: 100%;"
+                    alt="Дорога на север" />
+                </picture>
+              </div>
+            </a>
             <div class="gallery__content">
               <div class="gallary__wrapper">
                 <p class="gallery__name">Дорога на север</p>
                 <p class="gallery__author">Автор фото: Петр</p>
               </div>
               <div class="gallery__like">
-                <button class="gallery__like-button" type="button" aria-label="Нравится"></button>
-                <span class="gallery__like-sum">96</span>
+                <button class="gallery__like-button" type="button" aria-label="Нравится">
+                  <svg class="gallery__like-icon" width="23" height="21">
+                    <use xlink:href="../img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span class="gallery__like-sum">96</span>
+                </button>
               </div>
             </div>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-            <div class="gallery__content-photo">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-                <img src="/img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" style="width: 100%;"
-                  alt="Мост дьявола" />
-              </picture>
-            </div>
-          </a>
+              <div class="gallery__content-photo">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                  <img src="/img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" style="width: 100%;"
+                    alt="Мост дьявола" />
+                </picture>
+              </div>
+            </a>
             <div class="gallery__content">
               <div class="gallary__wrapper">
                 <p class="gallery__name">Мост дьявола</p>
                 <p class="gallery__author">Автор фото: Антон</p>
               </div>
               <div class="gallery__like">
-                <button class="gallery__like-button" type="button" aria-label="Нравится"></button>
-                <span class="gallery__like-sum">254</span>
+                <button class="gallery__like-button" type="button" aria-label="Нравится">
+                  <svg class="gallery__like-icon" width="23" height="21">
+                    <use xlink:href="../img/sprite.svg#icon-like"></use>
+                  </svg>
+                  <span class="gallery__like-sum">254</span>
+                </button>
               </div>
             </div>
           </li>
@@ -200,22 +215,33 @@
         <div class="presentation__range-wrapper">
         </div>
         <div class="presentation__button-wrapper">
-          <a href="#">
+
+
+
+          <button class="presentation__button" type="button" >
             <svg class="presentation__link-icon" width="16" height="20">
               <use xlink:href="../img/sprite.svg#icon-replay"></use>
             </svg>
-          </a>
+          </button>
+
+
           <input class="presentation__range" type="range" min="1" max="100" value="25" />
-          <a href="#">
+
+
+          <button class="presentation__button presentation__button--subtitles" type="button">
             <svg class="presentation__link-icon" width="32" height="20">
               <use xlink:href="../img/sprite.svg#icon-subtitles"></use>
             </svg>
-          </a>
-          <a href="#">
+          </button>
+
+
+          <button class="presentation__button" type="button">
             <svg class="presentation__link-icon" width="20" height="20">
               <use xlink:href="../img/sprite.svg#icon-fullscreen"></use>
             </svg>
-          </a>
+          </button>
+
+
         </div>
       </div>
     </div>

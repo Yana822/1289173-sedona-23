@@ -1,5 +1,9 @@
 .gallery {
-  margin: 30px 0;
+  margin: 33px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 65px 0;
+  }
 }
 
 .gallery__wrapper-headers {
@@ -15,8 +19,12 @@
   font-size: 18px;
   line-height: 26px;
   color: var(--black);
-  margin: 0 0 35px;
+  margin: 0 0 30px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .gallery__subtitle {
@@ -27,31 +35,40 @@
   color: var(--black-oliv);
   margin: 0;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 430px;
+    margin: 0 auto;
+  }
 }
 
 .gallery__list {
   padding: 0;
   list-style: none;
+  margin: 0;
+  padding-top: 55px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
   }
 }
 
 .gallery__item {
   text-align: left;
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 
   @media (min-width: @desktop-width) {
     position: relative;
+    margin: 0;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 380px;
+    top: 390px;
     left: -20px;
     width: 320px;
     height: 1px;
@@ -66,6 +83,7 @@
 .gallery__item--top {
   @media (min-width: @tablet-width) {
     grid-column: span 2;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -77,7 +95,7 @@
 .gallery__content-photo {
   display: block;
   width: 100%;
-  margin-bottom: 11px;
+  margin-bottom: 7px;
   height: 280px;
 
   @media (min-width: @tablet-width) {
@@ -139,6 +157,15 @@
   margin: 0;
 }
 
+.gallery__like {
+  margin-top: 10px;
+
+}
+
+.gallery__like-icon {
+  cursor: pointer;
+}
+
 .gallery__like-sum {
   font-style: normal;
   font-weight: bold;
@@ -148,23 +175,15 @@
   text-transform: uppercase;
   position: relative;
   padding-left: 40px;
+  padding-left: 10px;
   cursor: pointer;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 23px;
-    height: 21px;
-    background-image: url("../img/like-icon.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
 }
 
 .gallery__like-button {
   padding: 0;
   border: 0;
   cursor: pointer;
+  margin-top: 9px;
+  background: transparent;
+  display: flex;
 }

@@ -1,6 +1,7 @@
 .presentation {
   position: relative;
   text-transform: uppercase;
+  margin-top: 56px;
 }
 
 .presentation__video {
@@ -40,7 +41,7 @@
   font-size: 18px;
   line-height: 26px;
   color: var(--black);
-  margin: 0 0 38px 0;
+  margin: 0 0 28px 0;
 }
 
 .presentation__subtitle {
@@ -84,7 +85,7 @@
 .presentation__button-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 280px;
+  width: 250px;
   margin: 0 auto;
   background-color: #f2f2f2;
   padding: 21px;
@@ -100,6 +101,30 @@
   @media (min-width: @desktop-width) {
     width: 758px;
     top: 420px;
+  }
+}
+
+.presentation__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.presentation__button--subtitles{
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+
+.presentation__link-icon {
+  fill: #5C6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
