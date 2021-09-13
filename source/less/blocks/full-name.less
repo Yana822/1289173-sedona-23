@@ -59,28 +59,43 @@
 }
 
 .full-name__label {
+  display: block;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+  color: #333333;
   text-transform: uppercase;
-  margin: 0;
-  float: left;
   margin-right: 3px;
   margin-top: 20px;
+  float: left;
 }
 
 .full-name__input {
+  display: block;
+  box-sizing: border-box;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: var(--black);
+  color: #000000;
   background: var(--very-light-gray);
   margin-bottom: 20px;
-  border: none;
   height: 58px;
+  padding: 15px 20px;
+  border: none;
+
+  &:hover{
+background-color: #E5E5E5;
 }
+
+&:focus{
+background: #FFFFFF;
+border: 4px solid #E5E5E5;
+}
+}
+
+input {outline:none;}
 
 .full-name__input--name {
   width: 230px;
@@ -93,3 +108,5 @@
 .full-name__input--patronymic {
   width: 194px;
 }
+
+
