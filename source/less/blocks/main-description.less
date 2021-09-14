@@ -1,21 +1,17 @@
 .main-description {
+  position: relative;
   background: var(--pistachio-colored);
   color: var(--white);
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
-
   }
-}
-
-.main-description {
-  position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 37px;

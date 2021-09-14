@@ -26,7 +26,6 @@
   }
 }
 
-
 .attraction__title {
   position: relative;
   font-style: normal;
@@ -41,7 +40,7 @@
     margin-top: 35px;
   }
 
-  @media (min-width: @desktop-width){
+  @media (min-width: @desktop-width) {
     margin-top: 5px;
   }
 
@@ -91,14 +90,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 45px;
-
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 960px;
-    justify-content: space-between;
   }
 }
 
@@ -111,7 +108,8 @@
     width: 260px;
     margin-bottom: 35px;
   }
-  @media (min-width: @desktop-width){
+
+  @media (min-width: @desktop-width) {
     width: 100%;
   }
 }
@@ -120,5 +118,30 @@
   @media (min-width: @desktop-width) {
     align-items: center;
     display: flex;
+  }
+}
+
+.attraction__item--bridge {
+  @media (min-width: @desktop-width) {
+    width: 260px;
+  }
+}
+
+
+.attraction__item--mount {
+  @media (min-width: @desktop-width) {
+    width: 260px;
+  }
+}
+
+.attraction__item--park {
+  @media (min-width: @desktop-width) {
+    width: 235px;
+  }
+}
+
+.attraction__item--rock {
+  @media (min-width: @desktop-width) {
+    width: 206px;
   }
 }

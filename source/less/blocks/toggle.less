@@ -12,17 +12,17 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: #F2F2F2;
+  background: f2f2f2;
   position: relative;
   margin-right: 25px;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     margin-right: 30px;
   }
 }
 
 .toggle__radio::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 15px;
   left: 15px;
@@ -33,22 +33,22 @@
   display: none;
 }
 
-input:disabled~.toggle__radio {
-  background: #F2F2F2;
+input:disabled ~ .toggle__radio {
+  background: #f2f2f2;
   mix-blend-mode: normal;
 }
 
-input:hover~.toggle__radio {
-  background: #E5E5E5;
+input:hover ~ .toggle__radio {
+  background: #e5e5e5;
   mix-blend-mode: normal;
 }
 
-input:active~.toggle__radio {
-  background: #D5D5D5;
+input:active ~ .toggle__radio {
+  background: #d5d5d5;
   mix-blend-mode: normal;
 }
 
-input:checked~.toggle__radio::before {
+input:checked ~ .toggle__radio::before {
   display: block;
 }
 
@@ -62,9 +62,10 @@ input:checked~.toggle__radio::before {
   background: #f2f2f2;
   border-radius: 5%;
 }
-.toggle__label--checkbox{
-  @media (min-width: @tablet-width){
-    padding: 15px 0 15px 90px;
+
+.toggle__label--checkbox {
+  @media (min-width: @tablet-width) {
+    padding: 15px 0 15px 80px;
   }
 }
 
@@ -75,34 +76,35 @@ input:checked~.toggle__radio::before {
   left: 16px;
   width: 24px;
   height: 17px;
-  background: url(../img/icon-tick.svg) center no-repeat;
+  background: url("../img/icon-tick.svg") center no-repeat;
   background-size: contain;
   display: none;
 }
-.toggle__checkbox{
+
+.toggle__checkbox {
   margin-right: 80px;
-  @media (min-width: @tablet-width){
+
+  @media (min-width: @tablet-width) {
     margin: 0;
   }
 }
 
+input:disabled ~ .toggle__label--checkbox {
 
-input:disabled~.toggle__label--checkbox{
-
-  background: #F2F2F2;
+  background: #f2f2f2;
   mix-blend-mode: normal;
 }
 
-input:hover~.toggle__label--checkbox {
-  background: #E5E5E5;
+input:hover ~ .toggle__label--checkbox {
+  background: #e5e5e5;
   mix-blend-mode: normal;
 }
 
-input:active~.toggle__label--checkbox {
-  background: #D5D5D5;
+input:active ~ .toggle__label--checkbox {
+  background: #d5d5d5;
   mix-blend-mode: normal;
 }
 
-input:checked~.toggle__checkbox::before {
+input:checked ~ .toggle__checkbox::before {
   display: block;
 }
