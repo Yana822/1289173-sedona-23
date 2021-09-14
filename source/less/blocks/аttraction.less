@@ -1,5 +1,10 @@
 .аttraction {
   position: relative;
+  margin-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
 
   &::before {
     content: "";
@@ -21,6 +26,7 @@
   }
 }
 
+
 .attraction__title {
   position: relative;
   font-style: normal;
@@ -29,6 +35,15 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin-top: 35px;
+  }
+
+  @media (min-width: @desktop-width){
+    margin-top: 5px;
+  }
 
   @media (min-width: @tablet-width) {
     &::before {
@@ -75,11 +90,12 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 45px;
+
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     max-width: 960px;
     justify-content: space-between;
@@ -88,7 +104,16 @@
 
 .attraction__item {
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 55px;
+
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+    margin-bottom: 35px;
+  }
+  @media (min-width: @desktop-width){
+    width: 100%;
+  }
 }
 
 .attraction__item label {

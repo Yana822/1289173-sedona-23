@@ -65,15 +65,16 @@
     <section class="welcome-block">
 
 
-      <div class="welcome-block__image welcome-block__image--small">
+      <div class="welcome-block__image welcome-block__image--small welcome-block__image--small-form">
         <picture>
           <source media="(min-width: 768px)" srcset="../img/text-index-tablet2.png">
           <img src="../img/text-index-mobile2.png" alt="Седона">
         </picture>
       </div>
     </section>
+    <div class="container">
     <section class="form">
-      <div class="container">
+
         <div class="form__wrapper-headers">
           <h2 class="form__title">Оставьте свой отзыв</h2>
           <p class="form__subtitle">
@@ -120,11 +121,11 @@
               <p class="impression__title">Ваше Общее впечатление:</p>
               <ul class=" impression__list">
                 <li class="impression__item">
-                  <label class="toggle toggle__radio" for="value1">
-                    <input class="visually-hidden" type="radio" name="rating" id="value1" checked />
-                    <span class="toggle__radio"></span>
-                    Скорее положительное
-                  </label>
+                    <label class="toggle toggle__label" for="value1">
+                      <input class="visually-hidden" type="radio" name="rating" id="value1" checked />
+                      <span class="toggle__radio"></span>
+                      Скорее положительное
+                    </label>
                 </li>
                 <li class="impression__item">
                   <label class="toggle" for="value2">
@@ -143,28 +144,31 @@
               </ul>
             </div>
             <div class="аttraction">
-              <p class="attraction__title">посещенные достопримечательности:</p>
+              <p class="attraction__title">посещенные<br> достопримечательности:</p>
               <ul class="attraction__list">
                 <li class="attraction__item">
-                  <label class="toggle" for="variant1">
+                  <label class="toggle toggle__label toggle__label--checkbox" for="variant1">
                     <input class="visually-hidden" type="checkbox" id="variant1" name="variant" checked="checked" />
                     <span class="toggle__checkbox"></span>
                     Мост Дьявола</label>
                 </li>
                 <li class="attraction__item">
-                  <label class="toggle" for="variant2">
+
+                  <label class="toggle toggle__label toggle__label--checkbox" for="variant2">
                     <input class="visually-hidden" type="checkbox" id="variant2" name="variant" checked="checked" />
                     <span class="toggle__checkbox"></span>
                     Гора-Колокол</label>
+
+
                 </li>
                 <li class="attraction__item">
-                  <label class="toggle" for="variant3">
+                  <label class="toggle toggle__label toggle__label--checkbox" for="variant3">
                     <input class="visually-hidden" type="checkbox" id="variant3" name="variant" checked="checked" />
                     <span class="toggle__checkbox"></span>
                     Слайд-парк</label>
                 </li>
                 <li class="attraction__item">
-                  <label class="toggle" for="variant4">
+                  <label class="toggle toggle__label toggle__label--checkbox" for="variant4">
                     <input class="visually-hidden" type="checkbox" id="variant4" name="variant" />
                     <span class="toggle__checkbox"></span>
                     Красные скалы</label>
@@ -183,6 +187,7 @@
           </div>
         </form>
       </div>
+
     </section>
 
     <div class="modal-form modal-form__error visually-hidden">
@@ -207,8 +212,8 @@
     <section class="social">
       <div class="container">
         <div class="social__grid">
-          <p class="social__hashtag">#VISITSEDONA</p>
-          <ul class="social__list">
+          <p class="social__hashtag social__hashtag--form">#VISITSEDONA</p>
+          <ul class="social__list social__list--form">
             <li class="social__item social__item--twitter">
               <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"
                 aria-label="twitter">
@@ -236,7 +241,7 @@
               </a>
             </li>
           </ul>
-          <div class="page-footer__copyright copyright">
+          <div class="page-footer__copyright copyright copyright--form">
             <p class="copyright__text">Разработано:</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <svg class="copyright__link-img" width="27" height="34">
