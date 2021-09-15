@@ -8,6 +8,19 @@
 
   @media (min-width: @tablet-width) {
     margin-left: auto;
+    margin-right: 38px;
+    margin-top: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 100px;
+    margin-top: 65px;
+  }
+}
+
+.social__list--form {
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
   }
 }
 
@@ -22,60 +35,20 @@
   }
 }
 
-.social__item--twitter {
-  position: relative;
+.social__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 47px;
   height: 48px;
-  background-color: #81b3d2;
+  background-color: var(--pistachio-colored);
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 18px;
-    height: 15px;
-    top: 30%;
-    left: 35%;
-    background: url("../img/icon-twitter.svg") center no-repeat;
-    background-size: contain;
-    cursor: pointer;
+  &:hover {
+    background-color: var(--blue-steel);
   }
-}
 
-.social__item--facebook {
-  position: relative;
-  width: 47px;
-  height: 48px;
-  background-color: #81b3d2;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 9px;
-    height: 19px;
-    top: 30%;
-    left: 35%;
-    background: url("../img/icon-facebook.svg") center no-repeat;
-    background-size: contain;
-    cursor: pointer;
-  }
-}
-
-.social__item--youtube {
-  position: relative;
-  width: 47px;
-  height: 48px;
-  background-color: #81b3d2;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 19px;
-    height: 14px;
-    top: 30%;
-    left: 35%;
-    background: url("../img/icon-youtube.svg") center no-repeat;
-    background-size: contain;
-    cursor: pointer;
+  &:active {
+    background-color: var(--azure-color);
   }
 }
 
@@ -86,10 +59,30 @@
   line-height: 26px;
   text-transform: uppercase;
   color: var(--black);
-  margin-bottom: 40px;
+  margin-bottom: 33px;
+  margin-top: 40px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 40px;
-    margin-right: auto;
+    margin-top: 47px;
+    margin-right: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 123px;
+    margin-top: 105px;
+  }
+}
+
+.social__hashtag--form {
+  @media (min-width: @tablet-width) {
+    margin-top: 58px;
+  }
+}
+
+.social__link-icon {
+  fill: var(--white);
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
   }
 }

@@ -2,6 +2,7 @@
   background: var(--pistachio-colored);
   color: var(--white);
   text-transform: uppercase;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -10,10 +11,15 @@
 }
 
 .description__wrapper-headers {
-  padding: 55px 0 39px 0;
+  padding: 38px 0 37px 0;
 
   @media (min-width: @tablet-width) {
     order: 1;
+    padding: 45px 0 37px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 51px 90px;
   }
 }
 
@@ -22,7 +28,17 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 12px;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      content: "";
+    }
+
+    br::after {
+      content: "\00a0";
+    }
+  }
 }
 
 .description__number {
@@ -44,11 +60,8 @@
 
 .description__image {
   display: block;
-  background: url("../img/photo-bridge.jpg") center no-repeat #c0d6e4;
   width: 100%;
   height: 260px;
-  background-size: cover;
-  background-position: center;
 
   @media (min-width: @tablet-width) {
     order: -1;

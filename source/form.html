@@ -12,12 +12,16 @@
 <body class="page__body">
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <a class="page-header__logo">
-        <img src="../img/logo-mobile.svg" width="102" height="84" alt="Седона">
+      <a class="page-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="../img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="../img/logotype-tablet.svg">
+          <img src="../img/logotype-mobile.svg" alt="Седона">
+        </picture>
       </a>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item">
           <a href="index.html">
             Главная
           </a>
@@ -27,7 +31,7 @@
             ФОТО И ВИДЕО
           </a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--active">
           <a>
             Форма Отзыва
           </a>
@@ -59,18 +63,15 @@
   </script>
   <main class="page-main">
     <section class="welcome-block">
-      <div class="welcome-block__image">
-        <img class="welcome-block__image-text" src="../img/sedona.svg" width="282" height="214" alt="">
-      </div>
-      <div class="container">
-        <div class="welcome-block__wrapper-headers">
-          <h2 class="welcome-block__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h2>
-          <p class="welcome-block__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
+      <div class="welcome-block__image welcome-block__image--small welcome-block__image--small-form">
+        <picture>
+          <source media="(min-width: 768px)" srcset="../img/text-index-tablet2.png">
+          <img src="../img/text-index-mobile2.png" alt="Седона">
+        </picture>
       </div>
     </section>
-    <section class="form">
-      <div class="container">
+    <div class="container">
+      <section class="form">
         <div class="form__wrapper-headers">
           <h2 class="form__title">Оставьте свой отзыв</h2>
           <p class="form__subtitle">
@@ -82,20 +83,12 @@
           <div class="form__grid">
             <div class="full-name">
               <p class="full-name__title">Представьтесь:</p>
-
               <label class="full-name__label" for="name">ИМЯ*:</label>
-              <input class="full-name__input full-name__input--name" id="name" type="text" name="name"
-                placeholder="Петр" />
-
-
+              <input class="full-name__input full-name__input--name" id="name" type="text" name="name" placeholder="Петр" />
               <label class="full-name__label" for="surname">ФАМИЛИЯ*:</label>
-              <input class="full-name__input full-name__input--surname" id="surname" type="text" name="surname"
-                placeholder="Иванов" />
-
+              <input class="full-name__input full-name__input--surname" id="surname" type="text" name="surname" placeholder="Иванов" />
               <label class="full-name__label" for="patronymic">ОТЧЕСТВО*:</label>
-              <input class="full-name__input full-name__input--patronymic" id="patronymic" type="text" name="patronymic"
-                placeholder="Александрович" />
-
+              <input class="full-name__input full-name__input--patronymic" id="patronymic" type="text" name="patronymic" placeholder="Александрович" />
             </div>
             <div class="contacts-form contacts-form--tablet">
               <p class="contacts-form__title">Контактная информация:</p>
@@ -103,13 +96,11 @@
                 <div class="contacts-form__phone">
                   <label class="contacts-form__label" for="phone"><span class="contacts-form--hidden">Контактный</span>
                     телефон*:</label>
-                  <input class="contacts-form__input contacts-form__input--phone" id="phone" type="tel" name="phone"
-                    placeholder="Введите телефон" />
+                  <input class="contacts-form__input contacts-form__input--phone" id="phone" type="tel" name="phone" placeholder="Введите телефон" />
                 </div>
                 <div class="contacts-form__email">
-                  <label class="contacts-form__label" for="email">Электронная почта*:</label>
-                  <input class="contacts-form__input contacts-form__input--email" id="email" type="email" name="email"
-                    placeholder="Введите e-mail" />
+                  <label class="contacts-form__label contacts-form__label--email" for="email">Электронная почта*:</label>
+                  <input class="contacts-form__input contacts-form__input--email" id="email" type="email" name="email" placeholder="Введите e-mail" />
                 </div>
               </div>
             </div>
@@ -117,7 +108,7 @@
               <p class="impression__title">Ваше Общее впечатление:</p>
               <ul class=" impression__list">
                 <li class="impression__item">
-                  <label class="toggle" for="value1">
+                  <label class="toggle toggle__label" for="value1">
                     <input class="visually-hidden" type="radio" name="rating" id="value1" checked />
                     <span class="toggle__radio"></span>
                     Скорее положительное
@@ -140,28 +131,28 @@
               </ul>
             </div>
             <div class="аttraction">
-              <p class="attraction__title">посещенные достопримечательности:</p>
+              <p class="attraction__title">посещенные<br> достопримечательности:</p>
               <ul class="attraction__list">
-                <li class="attraction__item">
-                  <label class="toggle" for="variant1">
+                <li class="attraction__item attraction__item--bridge">
+                  <label class="toggle toggle__label toggle__label--checkbox" for="variant1">
                     <input class="visually-hidden" type="checkbox" id="variant1" name="variant" checked="checked" />
                     <span class="toggle__checkbox"></span>
                     Мост Дьявола</label>
                 </li>
-                <li class="attraction__item">
-                  <label class="toggle" for="variant2">
+                <li class="attraction__item attraction__item--mount">
+                  <label class="toggle toggle__label toggle__label--checkbox" for="variant2">
                     <input class="visually-hidden" type="checkbox" id="variant2" name="variant" checked="checked" />
                     <span class="toggle__checkbox"></span>
                     Гора-Колокол</label>
                 </li>
-                <li class="attraction__item">
-                  <label class="toggle" for="variant3">
+                <li class="attraction__item attraction__item--park">
+                  <label class="toggle toggle__label toggle__label--checkbox" for="variant3">
                     <input class="visually-hidden" type="checkbox" id="variant3" name="variant" checked="checked" />
                     <span class="toggle__checkbox"></span>
                     Слайд-парк</label>
                 </li>
-                <li class="attraction__item">
-                  <label class="toggle" for="variant4">
+                <li class="attraction__item attraction__item--rock">
+                  <label class="toggle toggle__label toggle__label--checkbox" for="variant4">
                     <input class="visually-hidden" type="checkbox" id="variant4" name="variant" />
                     <span class="toggle__checkbox"></span>
                     Красные скалы</label>
@@ -170,18 +161,16 @@
             </div>
             <div class="emotion">
               <label for="text-letter" class="emotion__title">ОПИШИТЕ СВОИ ЭМОЦИИ:</label>
-              <textarea class="emotion__comment-textarea" rows="5" id="text-letter" name="text-letter"
-                placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="emotion__comment-textarea" rows="5" id="text-letter" name="text-letter" placeholder="Опишите подробно все свои восторги"></textarea>
               <div class="emotion__button-wrapper">
-                <a class="emotion__button button" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
+                <button type="submit" class="emotion__button button" href="#">ОТПРАВИТЬ ОТЗЫВ</button>
                 <span class="emotion__note">* — обязательные поля</span>
               </div>
             </div>
           </div>
         </form>
-      </div>
+    </div>
     </section>
-
     <div class="modal-form modal-form__error visually-hidden">
       <div class="container">
         <p class="modal-form__title">Что-то пошло не так!</p>
@@ -189,7 +178,6 @@
         <button class="modal-form__button button" type="submit">OK</button>
       </div>
     </div>
-
     <div class="modal-form modal-form__successful visually-hidden">
       <div class="container">
         <p class="modal-form__title">Ваш отзыв отправлен!</p>
@@ -197,35 +185,42 @@
           опубликуем его на сайте.</p>
         <button class="modal-form__button button" type="submit">ЗАКРЫТЬ ОКНО</button>
       </div>
-
     </div>
   </main>
   <footer class="page-footer">
     <section class="social">
       <div class="container">
         <div class="social__grid">
-          <p class="social__hashtag">#VISITSEDONA</p>
-          <ul class="social__list">
+          <p class="social__hashtag social__hashtag--form">#VISITSEDONA</p>
+          <ul class="social__list social__list--form">
             <li class="social__item social__item--twitter">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru"
-                aria-label="twitter">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="twitter">
+                <svg class="social__link-icon" width="18" height="14">
+                  <use xlink:href="../img/sprite.svg#icon-twitter"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item social__item--facebook">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
-                aria-label="facebook">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="facebook">
+                <svg class="social__link-icon" width="18" height="14">
+                  <use xlink:href="../img/sprite.svg#icon-facebook"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item social__item--youtube">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
-                aria-label="youtube">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="youtube">
+                <svg class="social__link-icon" width="18" height="14">
+                  <use xlink:href="../img/sprite.svg#icon-youtube"></use>
+                </svg>
               </a>
             </li>
           </ul>
-          <div class="page-footer__copyright copyright">
+          <div class="page-footer__copyright copyright copyright--form">
             <p class="copyright__text">Разработано:</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img src="../img/htmlacademy.svg" width="27" height="34" alt="htmlacademy">
+              <svg class="copyright__link-img" width="27" height="34">
+                <use xlink:href="../img/sprite.svg#html-academy"></use>
+              </svg>
             </a>
           </div>
         </div>

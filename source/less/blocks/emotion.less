@@ -6,6 +6,7 @@
     flex-direction: column;
     grid-column: span 2;
     order: 5;
+    margin-top: 32px;
   }
 }
 
@@ -17,6 +18,10 @@
   line-height: 26px;
   text-transform: uppercase;
   color: var(--black);
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 
   @media (min-width: @tablet-width) {
     &::before {
@@ -59,20 +64,34 @@
   line-height: 26px;
   color: var(--black);
   margin-top: 15px;
-  margin-bottom: 51px;
+  width: 235px;
+  margin-bottom: 70px;
 
   @media (min-width: @tablet-width) {
     margin-top: 55px;
+    margin-bottom: 60px;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 910px;
+    margin-left: 48px;
   }
 }
 
 .emotion__button {
-  padding: 10px 35px;
+  padding: 15px 48px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    width: 324px;
+    width: 290px;
     padding: 16px;
+    margin-left: 15px;
+
+    @media (min-width: @desktop-width) {
+      width: 480px;
+      margin-left: 48px;
+    }
   }
 }
 
@@ -91,8 +110,13 @@
   font-size: 14px;
   line-height: 26px;
   color: #333333;
+  margin-right: 15px;
 
   @media (max-width: @mobile-width-only) {
     display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 45px;
   }
 }

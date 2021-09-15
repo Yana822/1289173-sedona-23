@@ -7,8 +7,11 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
+  margin-top: 25px;
 
   @media (min-width: @tablet-width) {
+    font-size: 21px;
+
     &::before {
       content: "";
       position: absolute;
@@ -42,14 +45,22 @@
 .contacts-form__wrapper {
   margin-bottom: 48px;
 
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin: 0 auto;
+  }
+
   @media (min-width: @desktop-width) {
+    width: 960px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 75px;
   }
 }
 
 .contacts-form--tablet {
   @media (min-width: @tablet-width) {
+
     grid-column: span 2;
     order: 3;
   }
@@ -64,19 +75,33 @@
   text-transform: uppercase;
   margin: 0;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .contacts-form__label {
   float: left;
+  margin-bottom: 10px;
+  margin-left: 20px;
 
   @media (min-width: @desktop-width) {
     margin-right: 17px;
+    margin-left: 0;
   }
+}
+
+.contacts-form__label--email {
+  margin-bottom: 5px;
 }
 
 .contacts-form__phone {
   position: relative;
-  margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 401px;
@@ -87,7 +112,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 26px;
+    top: 35px;
     right: 0;
     width: 56px;
     height: 56px;
@@ -113,7 +138,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 26px;
+    top: 32px;
     right: 0;
     width: 56px;
     height: 56px;
@@ -127,19 +152,34 @@
 }
 
 .contacts-form__input {
+  display: block;
+  box-sizing: border-box;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: var(--black);
+  color: #000000;
   background: var(--very-light-gray);
-  border: none;
+  margin-bottom: 15px;
   height: 56px;
-  width: 100%;
-  padding: 0;
+  padding: 15px 20px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 
   @media (min-width: @desktop-width) {
     width: 315px;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background: var(--white);
+    border: 4px solid #e5e5e5;
   }
 }
 
@@ -149,7 +189,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 250px;
+    top: 289px;
     left: -20px;
     width: 320px;
     height: 1px;

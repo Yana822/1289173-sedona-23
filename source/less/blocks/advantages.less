@@ -1,5 +1,13 @@
 .advantages {
-  margin: 35px 0 35px 0;
+  margin: 30px 0 32px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 55px 0 35px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 60px 0 53px 0;
+  }
 }
 
 .advantages__list {
@@ -7,121 +15,113 @@
   padding: 0;
   margin: 0;
   text-align: left;
-  padding-left: 70px;
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 68px;
+    grid-template-columns: 256px 256px 256px;
     padding: 0;
     text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 400px 400px 400px;
   }
 }
 
 .advantages__item {
   text-transform: uppercase;
-  margin: 0 0 26px 0;
+  margin: 0 0 20px 0;
   max-width: 193px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   @media (min-width: @tablet-width) {
-    padding-top: 158px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 105px;
   }
 }
 
-.advantages__lodging {
-  position: relative;
+.advantages__icon-house {
+  width: 39px;
+  height: 37px;
+  margin-right: 10px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -12px;
-    left: -50px;
-    width: 39px;
-    height: 37px;
-    background-image: url("../img/icon-house.svg");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: contain;
+  @media (min-width: @tablet-width) {
+    top: 22px;
+    left: 89px;
+    width: 75px;
+    height: 72px;
+  }
 
-    @media (min-width: @tablet-width) {
-      top: 50px;
-      left: 60px;
-      width: 75px;
-      height: 72px;
-    }
+  @media (min-width: @desktop-width) {
+    left: 159px;
   }
 }
 
-.advantages__souvenirs {
-  position: relative;
+.advantages__icon-souvenirs {
+  width: 32px;
+  height: 38px;
+  margin-right: 17px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -12px;
-    left: -50px;
-    width: 32px;
-    height: 38px;
-    background-image: url("../img/icon-gift.svg");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: contain;
+  @media (min-width: @tablet-width) {
+    top: 20px;
+    left: 97px;
+    width: 75px;
+    height: 72px;
+  }
 
-    @media (min-width: @tablet-width) {
-      top: 50px;
-      left: 60px;
-      width: 75px;
-      height: 72px;
-    }
+  @media (min-width: @desktop-width) {
+    left: 167px;
   }
 }
 
-.advantages__food {
-  position: relative;
+.advantages__icon-food {
+  width: 40px;
+  height: 35px;
+  margin-right: 10px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -12px;
-    left: -50px;
-    width: 40px;
-    height: 35px;
-    background-image: url("../img/icon-burger.svg");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: contain;
+  @media (min-width: @tablet-width) {
+    top: 25px;
+    left: 89px;
+    width: 75px;
+    height: 72px;
+  }
 
-    @media (min-width: @tablet-width) {
-      top: 50px;
-      left: 60px;
-      width: 75px;
-      height: 72px;
-    }
+  @media (min-width: @desktop-width) {
+    left: 161px;
   }
 }
-
 
 @media (min-width: @tablet-width) {
   .advantages__item----lodging {
     order: -1;
   }
-
-  .advantages__item--souvenirs {
-    order: 1;
-  }
-
-  .advantages__item--food {
-    order: 0;
-  }
 }
 
+.advantages__item--souvenirs {
+  order: 1;
+}
+
+.advantages__item--food {
+  order: 0;
+}
 
 .advantages__title {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  margin: 0 0 27px 0;
+  margin: 0 0 18px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 25px 0;
+  }
 }
 
 .advantages__info {
@@ -130,4 +130,17 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
+  width: 210px;
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+  }
+}
+
+.advantages__info-wrapper {
+  margin-top: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
+  }
 }

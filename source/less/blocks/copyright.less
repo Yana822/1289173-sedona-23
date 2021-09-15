@@ -5,7 +5,19 @@
 
   @media (min-width: @tablet-width) {
     margin-left: auto;
-    margin-top: 0;
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 45px;
+    margin-top: 60px;
+  }
+}
+
+.copyright--form {
+  @media (min-width: @tablet-width) {
+    margin-top: 25px;
   }
 }
 
@@ -16,4 +28,20 @@
   line-height: 26px;
   text-transform: uppercase;
   margin: 0 10px 0 0;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 10px;
+  }
+}
+
+.copyright__link-img {
+  fill: var(--black);
+
+  &:hover {
+    fill: var(--pistachio-colored);
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
+  }
 }
