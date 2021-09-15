@@ -33,44 +33,6 @@ const styles = () => {
 
 exports.styles = styles;
 
-// gulp-rename
-
-var rename = require("gulp-rename");
-// rename to a fixed value
-gulp.src("./src/main/text/hello.txt")
-  .pipe(rename("main/text/ciao/goodbye.md"))
-  .pipe(gulp.dest("./dist")); // ./dist/main/text/ciao/goodbye.md
-// rename via mutating function
-gulp.src("./src/**/hello.txt")
-  .pipe(rename(function (path) {
-    // Updates the object in-place
-    path.dirname += "/ciao";
-    path.basename += "-goodbye";
-    path.extname = ".md";
-  }))
-  .pipe(gulp.dest("./dist")); // ./dist/main/text/ciao/hello-goodbye.md
-// rename via a map function
-gulp.src("./src/**/hello.txt")
-  .pipe(rename(function (path) {
-    // Returns a completely new object, make sure you return all keys needed!
-    return {
-      dirname: path.dirname + "/ciao",
-      basename: path.basename + "-goodbye",
-      extname: ".md"
-    };
-  }))
-  .pipe(gulp.dest("./dist")); // ./dist/main/text/ciao/hello-goodbye.md
-// rename via a fixed object
-gulp.src("./src/main/text/hello.txt", { base: process.cwd() })
-  .pipe(rename({
-    dirname: "main/text/ciao",
-    basename: "aloha",
-    prefix: "bonjour-",
-    suffix: "-hola",
-    extname: ".md"
-  }))
-  .pipe(gulp.dest("./dist"));
-
 // HTML
 
 const html = () => {
