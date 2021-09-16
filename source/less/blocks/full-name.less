@@ -2,25 +2,13 @@
   position: relative;
 
   &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 1px;
-    height: 292px;
-    background-color: var(--light--silver);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 280px;
-    left: -20px;
-    width: 320px;
-    height: 1px;
-    background-color: var(--pale-gray);
-
     @media (min-width: @tablet-width) {
-      display: none;
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 1px;
+      height: 292px;
+      background-color: var(--light--silver);
     }
   }
 
@@ -35,17 +23,15 @@
   }
 }
 
-.full-name &::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -20px;
-  width: 1px;
-  height: 290px;
-  background-color: var(--pale-gray);
-
+.full-name ::before {
   @media (max-width: @mobile-width-only) {
-    display: none;
+    content: "";
+    position: absolute;
+    top: 278px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: var(--very-light-gray);
   }
 }
 
