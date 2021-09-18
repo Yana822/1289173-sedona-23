@@ -1,8 +1,5 @@
 .toggle {
   position: relative;
-}
-
-.toggle__label {
   cursor: pointer;
 }
 
@@ -35,26 +32,22 @@
 
 input:disabled~.toggle__radio {
   background: #f2f2f2;
-  mix-blend-mode: normal;
 }
 
 input:hover~.toggle__radio {
   background: #e5e5e5;
-  mix-blend-mode: normal;
 }
 
 input:active~.toggle__radio {
   background: #d5d5d5;
-  mix-blend-mode: normal;
 }
 
 input:checked~.toggle__radio::before {
   display: block;
 }
-
-.toggle__label--checkbox::before {
-  content: "";
-  position: absolute;
+.toggle__checkbox{
+  display: inline-block;
+  position: relative;
   top: 0;
   left: 0;
   width: 57px;
@@ -63,7 +56,7 @@ input:checked~.toggle__radio::before {
   border-radius: 5%;
 }
 
-.toggle__label--checkbox {
+.toggle--checkbox {
   @media (min-width: @tablet-width) {
     padding: 15px 0 15px 80px;
   }
@@ -89,20 +82,16 @@ input:checked~.toggle__radio::before {
   }
 }
 
-input:disabled~.toggle__label--checkbox {
-
+input:disabled~.toggle__checkbox {
   background: #f2f2f2;
-  mix-blend-mode: normal;
 }
 
-input:hover~.toggle__label--checkbox {
+input:hover~.toggle__checkbox {
   background: #e5e5e5;
-  mix-blend-mode: normal;
 }
 
-input:active~.toggle__label--checkbox {
+input:active~.toggle__checkbox {
   background: #d5d5d5;
-  mix-blend-mode: normal;
 }
 
 input:checked~.toggle__checkbox::before {
