@@ -1,6 +1,9 @@
+.social--catalog{
 
-
-
+  @media (min-width: @desktop-width){
+padding-top: 70px;
+  }
+}
 
 .social__list {
   display: flex;
@@ -34,10 +37,23 @@
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
+    margin-top: 68px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+.social__grid--form{
+  @media (min-width: @tablet-width){
+margin-top: 53px;
+}
+
+@media (min-width: @tablet-width){
+margin-top: 75px;
+}
+
+}
+
 
 .social__list a {
   display: flex;
@@ -73,7 +89,8 @@
 
   @media (min-width: @desktop-width) {
     margin-right: 123px;
-    margin-top: 1px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 

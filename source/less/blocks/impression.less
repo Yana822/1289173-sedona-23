@@ -18,10 +18,12 @@
   @media (min-width: @tablet-width) {
     order: 1;
     width: 324px;
+    padding-left: 15px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 58px;
+    padding-left: 48px;
+    width: 480px;
   }
 }
 
@@ -37,6 +39,10 @@
     font-size: 21px;
     text-align: left;
   }
+
+@media (min-width: @desktop-width){
+    padding-left: 75px;
+}
 }
 
 .impression__list {
@@ -50,17 +56,17 @@
   margin-top: 25px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 63px;
+  margin-top: 58px;
   }
 }
 
 .impression__item {
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   float: left;
   display: flex;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 30px;
+  margin-bottom: 22px;
   }
 }

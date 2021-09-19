@@ -1,12 +1,14 @@
 .emotion {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-top: 15px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     grid-column: span 2;
     order: 5;
-    margin-top: 32px;
+    margin-top: 40px;
+    margin-bottom: 0;
   }
 }
 
@@ -21,6 +23,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: @tablet-width) {
@@ -56,7 +59,7 @@
 
 .emotion__comment-textarea {
   height: auto;
-  padding: 12px 20px;
+  padding: 12px 10px 10px 20px;
   background-color: var(--very-light-gray);
   border: 2px solid var(--very-light-gray);
   font-weight: 700;
@@ -64,18 +67,19 @@
   line-height: 26px;
   color: var(--black);
   margin-top: 15px;
-  width: 235px;
-  margin-bottom: 70px;
+  width: 253px;
+  margin-bottom: 50px;
 
-  @media (min-width: @tablet-width) {
-    margin-top: 55px;
-    margin-bottom: 60px;
-    width: 620px;
+@media (min-width: @tablet-width) {
+  margin-top: 55px;
+  margin-bottom: 60px;
+  width: 620px;
+  margin: 0 auto;
   }
 
-  @media (min-width: @desktop-width) {
-    width: 910px;
-    margin-left: 48px;
+@media (min-width: @desktop-width) {
+  width: 910px;
+  margin-left: 48px;
   }
 }
 
@@ -84,10 +88,9 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
-    width: 290px;
-    padding: 16px;
-    margin-left: 15px;
+    width: 324px;
+    padding: 16px 35px;
+    margin: 0 0 0 14px;
 
     @media (min-width: @desktop-width) {
       padding: 15px 48px;
@@ -102,8 +105,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    margin-top: 61px;
 }
+  }
+
 
 .emotion__note {
   text-transform: uppercase;

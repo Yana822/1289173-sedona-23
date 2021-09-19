@@ -6,25 +6,26 @@
 .toggle__radio {
   display: inline-block;
   vertical-align: middle;
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background: #f2f2f2;
   position: relative;
-  margin-right: 25px;
+  margin-right: 17px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 30px;
-  }
+    margin-right: 15px;
 }
+  }
+
 
 .toggle__radio::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 18px;
-  height: 18px;
+  top: 16px;
+  left: 16px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background-color: #333333;
   display: none;
@@ -45,20 +46,19 @@ input:active~.toggle__radio {
 input:checked~.toggle__radio::before {
   display: block;
 }
+
 .toggle__checkbox{
   display: inline-block;
   position: relative;
-  top: 0;
-  left: 0;
+  vertical-align: middle;
   width: 57px;
   height: 57px;
   background: #f2f2f2;
   border-radius: 5%;
-}
+  margin-right: 18px;
 
-.toggle--checkbox {
   @media (min-width: @tablet-width) {
-    padding: 15px 0 15px 80px;
+  margin-right: 20px;
   }
 }
 
@@ -72,14 +72,6 @@ input:checked~.toggle__radio::before {
   background: url("../img/icon-tick.svg") center no-repeat;
   background-size: contain;
   display: none;
-}
-
-.toggle__checkbox {
-  margin-right: 80px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0;
-  }
 }
 
 input:disabled~.toggle__checkbox {
