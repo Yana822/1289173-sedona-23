@@ -2,11 +2,11 @@
   margin: 30px 0 32px 0;
 
   @media (min-width: @tablet-width) {
-    margin: 55px 0 35px 0;
+    margin: 55px 0 61px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 60px 0 53px 0;
+    margin: 60px 0 83px;
   }
 }
 
@@ -30,7 +30,7 @@
 
 .advantages__item {
   text-transform: uppercase;
-  margin: 0 0 20px 0;
+  margin-top: 20px;
   max-width: 193px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -40,6 +40,8 @@
     flex-direction: column;
     align-items: center;
     padding-left: 30px;
+    margin: 0;
+    margin-top: 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,10 +55,9 @@
   margin-right: 10px;
 
   @media (min-width: @tablet-width) {
-    top: 22px;
-    left: 89px;
     width: 75px;
     height: 72px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -67,13 +68,14 @@
 .advantages__icon-souvenirs {
   width: 32px;
   height: 38px;
-  margin-right: 17px;
+  margin-right: 13px;
+  margin-left: 5px;
+  margin-top: -5px;
 
   @media (min-width: @tablet-width) {
-    top: 20px;
-    left: 97px;
     width: 75px;
     height: 72px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -87,10 +89,9 @@
   margin-right: 10px;
 
   @media (min-width: @tablet-width) {
-    top: 25px;
-    left: 89px;
     width: 75px;
     height: 72px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -115,12 +116,12 @@
 .advantages__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   margin: 0 0 18px 0;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 25px 0;
+    margin: 0 0 20px;
   }
 }
 
@@ -130,17 +131,47 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
-  width: 210px;
+
+  @media (max-width: @mobile-width-only) {
+    width: 210px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 300px;
   }
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      content: "";
+    }
+
+    br::after {
+      content: "\00a0";
+    }
+  }
+}
+
+.advantages__info--souvenirs{
+  @media (max-width: @tablet-width) {
+    br {
+      content: "";
+    }
+
+    br::after {
+      content: "\00a0";
+    }
+  }
+
 }
 
 .advantages__info-wrapper {
   margin-top: 5px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 30px;
+    margin-top: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 23px;
   }
 }

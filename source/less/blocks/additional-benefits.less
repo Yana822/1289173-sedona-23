@@ -30,7 +30,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 180px;
+    top: 165px;
     left: -10px;
     width: 280px;
     height: 1px;
@@ -59,7 +59,7 @@
   @media (min-width: @tablet-width) {
     font-size: 21px;
     width: 119px;
-    padding-top: 38px;
+    padding-top: 42px;
   }
 }
 
@@ -83,12 +83,32 @@
   line-height: 21px;
   margin: 0 auto;
   padding-bottom: 26px;
-  width: 258px;
+  width: 256px;
 
   @media (min-width: @tablet-width) {
     width: 180px;
   }
 
+  @media (min-width: @desktop-width) {
+    width: 285px;
+  }
+}
+
+.additional-benefits__info--road {
+  @media (min-width: @tablet-width) {
+    width: 130px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 270px;
+  }
+}
+
+.additional-benefits__info--tourists {
+  @media (min-width: @tablet-width) {
+    width: 150px;
+  }
+  
   @media (min-width: @desktop-width) {
     width: 285px;
   }
